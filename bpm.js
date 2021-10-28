@@ -76,7 +76,7 @@ function _init(data, info) {
       const numCep = map.get("numCep");
    
       const parcela1 = map.get("parcela1");
-      const parcela2 = map.get("parcela2");
+      /*const parcela2 = map.get("parcela2");
       const parcela3 = map.get("parcela3");
       const parcela4 = map.get("parcela4");
       const parcela5 = map.get("parcela5");
@@ -99,7 +99,7 @@ function _init(data, info) {
       const parcela22 = map.get("parcela22");
       const parcela23 = map.get("parcela23");
       const parcela24 = map.get("parcela24");
-      const parcela25 = map.get("parcela25");
+      const parcela25 = map.get("parcela25");*/
 
 
       document.getElementById("nomDes").setAttribute("value", nomDes);
@@ -108,7 +108,7 @@ function _init(data, info) {
       document.getElementById("numCep").setAttribute("value", numCep);
 
       document.getElementById("parcela1").setAttribute("value", parcela1);
-      document.getElementById("parcela2").setAttribute("value", parcela2);
+      /*document.getElementById("parcela2").setAttribute("value", parcela2);
       document.getElementById("parcela3").setAttribute("value", parcela3);
       document.getElementById("parcela4").setAttribute("value", parcela4);
       document.getElementById("parcela5").setAttribute("value", parcela5);
@@ -131,7 +131,7 @@ function _init(data, info) {
       document.getElementById("parcela22").setAttribute("value", parcela22);
       document.getElementById("parcela23").setAttribute("value", parcela23);
       document.getElementById("parcela24").setAttribute("value", parcela24);
-      document.getElementById("parcela25").setAttribute("value", parcela25);
+      document.getElementById("parcela25").setAttribute("value", parcela25);*/
 
     }
   });
@@ -153,7 +153,7 @@ function _saveData(data, info) {
   newData.check = document.getElementById("gridCheck").value;
 
   newData.parcela1 = document.getElementById("parcela1").value;
-  newData.parcela2 = document.getElementById("parcela2").value;
+  /*newData.parcela2 = document.getElementById("parcela2").value;
   newData.parcela3 = document.getElementById("parcela3").value;
   newData.parcela4 = document.getElementById("parcela4").value;
   newData.parcela5 = document.getElementById("parcela5").value;
@@ -176,7 +176,7 @@ function _saveData(data, info) {
   newData.parcela22 = document.getElementById("parcela22").value;
   newData.parcela23 = document.getElementById("parcela23").value;
   newData.parcela24 = document.getElementById("parcel124").value;
-  newData.parcela25 = document.getElementById("parcela25").value;
+  newData.parcela25 = document.getElementById("parcela25").value;*/
   console.log(newData);
   return {
     formData: newData,
