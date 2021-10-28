@@ -89,21 +89,17 @@
         <div class="invalid-feedback">
           Você precisa aceitar os termos para prosseguir.
         </div>
-        <div>
+        <div style="padding-top: 50px;">
           <!-- Tabela simples contendo linhas e colunas -->
-          <table id="minhaTabela" border="1">
+          <table id="minhaTabela" >
             <tr>
               <td>
-                <input type="text">
-              </td>
-              <td>
-                <input type="text">
+               <label for="">Digite o valor da parcela 1 </label> <input for = "parcela1" type="text">
               </td>
             </tr>
-
           </table>
           <!-- Este botão quando acionado irá chamar a função responsável em inserir a linha na tabela -->
-          <input type="button" value="Inserir Linha" onclick="inserirLinhaTabela()" />
+          <input type="button" value="Inserir nova parcela" onclick="inserirLinhaTabela()" />
         </div>
       </div>
     </div>
