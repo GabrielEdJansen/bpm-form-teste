@@ -152,7 +152,7 @@ function _saveData(data, info) {
   newData.estDes = selectEstado.options[selectEstado.selectedIndex].value;
   newData.numCep = document.getElementById("numCep").value;
   newData.check = document.getElementById("gridCheck").value;
-  newData.check = document.getElementById("par").value;
+  newData.par = document.getElementById("par").value;
   /*newData.check = document.getElementById("parcela1").value;
   newData.check = document.getElementById("parcela2").value;
   newData.check = document.getElementById("parcela3").value;
