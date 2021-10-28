@@ -21,20 +21,6 @@
 <body style="margin: revert">
   <form class="row g-3 needs-validation" id="form" novalidate>
 
-    <div class="col-md-12">
-      <!-- Tabela simples contendo linhas e colunas -->
-       <table id="minhaTabela" >
-        <tr>
-          <td>
-      <label for="par" class="form-label">Digite o valor da parcela 1</label>
-      <input type="text" class="form-control" id="par" />
-     </td>
-        </tr>
-      </table>
-      <!-- Este botão quando acionado irá chamar a função responsável em inserir a linha na tabela -->
-      <input type="button" value="Inserir nova parcela" onclick="inserirLinhaTabela()" />
-    </div>
-
 
     <div class="col-md-6">
       <label for="nomFun" class="form-label">Nome solicitante</label>
@@ -55,6 +41,21 @@
       <label for="nomDes" class="form-label">Destino</label>
       <input type="text" class="form-control" id="nomDes" />
     </div>
+
+    <div class="col-md-12">
+      <!-- Tabela simples contendo linhas e colunas -->
+       <table id="minhaTabela" >
+        <tr>
+          <td>
+      <label for="par" class="form-label">Digite o valor da parcela 1</label>
+      <input type="text" class="form-control" id="par" />
+     </td>
+        </tr>
+      </table>
+      <!-- Este botão quando acionado irá chamar a função responsável em inserir a linha na tabela -->
+      <input type="button" value="Inserir nova parcela" onclick="inserirLinhaTabela()" />
+    </div>
+
 
 
     <div class="col-md-4">
