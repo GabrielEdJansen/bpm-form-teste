@@ -74,7 +74,7 @@ function _init(data, info) {
       const desMot = map.get("desMot");
       const estDes = map.get("estDes");
       const numCep = map.get("numCep");
-      const parcela = map.get("parcela");
+      const par = map.get("par");
       /*const parcela1 = map.get("parcela1");
       const parcela2 = map.get("parcela2");
       const parcela3 = map.get("parcela3");
@@ -106,7 +106,7 @@ function _init(data, info) {
       document.getElementById("desMot").setAttribute("value", desMot);
       document.getElementById("estDes").value = estDes;
       document.getElementById("numCep").setAttribute("value", numCep);
-      document.getElementById("parcela").setAttribute("value", parcela);
+      document.getElementById("par").setAttribute("value", par);
 
       /*document.getElementById("parcela1").setAttribute("value", parcela1);
       document.getElementById("parcela2").setAttribute("value", parcela2);
@@ -152,7 +152,7 @@ function _saveData(data, info) {
   newData.estDes = selectEstado.options[selectEstado.selectedIndex].value;
   newData.numCep = document.getElementById("numCep").value;
   newData.check = document.getElementById("gridCheck").value;
-  newData.check = document.getElementById("parcela").value;
+  newData.check = document.getElementById("par").value;
   /*newData.check = document.getElementById("parcela1").value;
   newData.check = document.getElementById("parcela2").value;
   newData.check = document.getElementById("parcela3").value;
