@@ -21,7 +21,7 @@ function inserirLinhaTabela() {
       // Insere um conteúdo na coluna
     }
 
-    newCell.innerHTML = "<label>Digite o valor da parcela " + nNumLinha + " </label> " + "<input id=' " + "parcela" + nNumLinha + "' type='number'>";
+    newCell.innerHTML = "<label  for= '" + "parcela" + nNumLinha +"'>Digite o valor da parcela " + nNumLinha + " </label> " + "<input id='" + "parcela" + nNumLinha + "' type='number' class='form-control'>";
 
   } if (nNumLinha > 25) {
     alert("O Número máximo de parcelas é 25")
