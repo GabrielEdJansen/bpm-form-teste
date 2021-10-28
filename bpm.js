@@ -74,9 +74,9 @@ function _init(data, info) {
       const desMot = map.get("desMot");
       const estDes = map.get("estDes");
       const numCep = map.get("numCep");
-
-      const parcela1 = map.get("parcela1");
-    /*  const parcela2 = map.get("parcela2");
+      const parcela = map.get("parcela");
+      /*const parcela1 = map.get("parcela1");
+      const parcela2 = map.get("parcela2");
       const parcela3 = map.get("parcela3");
       const parcela4 = map.get("parcela4");
       const parcela5 = map.get("parcela5");
@@ -106,9 +106,10 @@ function _init(data, info) {
       document.getElementById("desMot").setAttribute("value", desMot);
       document.getElementById("estDes").value = estDes;
       document.getElementById("numCep").setAttribute("value", numCep);
+      document.getElementById("parcela").setAttribute("value", parcela);
 
-      document.getElementById("parcela1").setAttribute("value", parcela1);
-     /* document.getElementById("parcela2").setAttribute("value", parcela2);
+      /*document.getElementById("parcela1").setAttribute("value", parcela1);
+      document.getElementById("parcela2").setAttribute("value", parcela2);
       document.getElementById("parcela3").setAttribute("value", parcela3);
       document.getElementById("parcela4").setAttribute("value", parcela4);
       document.getElementById("parcela5").setAttribute("value", parcela5);
@@ -151,8 +152,9 @@ function _saveData(data, info) {
   newData.estDes = selectEstado.options[selectEstado.selectedIndex].value;
   newData.numCep = document.getElementById("numCep").value;
   newData.check = document.getElementById("gridCheck").value;
-  newData.check = document.getElementById("parcela1").value;
- /* newData.check = document.getElementById("parcela2").value;
+  newData.check = document.getElementById("parcela").value;
+  /*newData.check = document.getElementById("parcela1").value;
+  newData.check = document.getElementById("parcela2").value;
   newData.check = document.getElementById("parcela3").value;
   newData.check = document.getElementById("parcela4").value;
   newData.check = document.getElementById("parcela5").value;
