@@ -7,22 +7,24 @@ function inserirLinhaTabela() {
   // Captura a quantidade de colunas da última linha da tabela
   var numOfCols = table.rows[numOfRows - 1].cells.length;
 
-  // Insere uma linha no fim da tabela.
-  var newRow = table.insertRow(numOfRows);
+  var nNumLinha;
+  nNumLinha = numOfRows + 1;
 
-  // Faz um loop para criar as colunas
-  for (var j = 0; j < numOfCols; j++) {
-    // Insere uma coluna na nova linha 
-    newCell = newRow.insertCell(j);
-    // Insere um conteúdo na coluna
+  if (nNumLinha <= 25) {
+    // Insere uma linha no fim da tabela.
+    var newRow = table.insertRow(numOfRows);
 
-    var nNumLinha;
-    nNumLinha = numOfRows + 1;
+    // Faz um loop para criar as colunas
+    for (var j = 0; j < numOfCols; j++) {
+      // Insere uma coluna na nova linha 
+      newCell = newRow.insertCell(j);
+      // Insere um conteúdo na coluna
+    }
 
-    newCell.innerHTML = "<label>Digite o valor da parcela "+ nNumLinha + " </label> " + "<input for=' " + "parcela" + nNumLinha + "' type='text'>";
+    newCell.innerHTML = "<label>Digite o valor da parcela " + nNumLinha + " </label> " + "<input for=' " + "parcela" + nNumLinha + "' type='text'>";
 
-
-
+  } if (nNumLinha > 25) {
+    alert("O Número máximo de parcelas é 25")
   }
 
 }
