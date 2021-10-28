@@ -74,8 +74,8 @@ function _init(data, info) {
       const desMot = map.get("desMot");
       const estDes = map.get("estDes");
       const numCep = map.get("numCep");
-      const par = map.get("par");
-      /*const parcela1 = map.get("parcela1");
+   
+      const parcela1 = map.get("parcela1");
       const parcela2 = map.get("parcela2");
       const parcela3 = map.get("parcela3");
       const parcela4 = map.get("parcela4");
@@ -99,16 +99,15 @@ function _init(data, info) {
       const parcela22 = map.get("parcela22");
       const parcela23 = map.get("parcela23");
       const parcela24 = map.get("parcela24");
-      const parcela25 = map.get("parcela25");*/
+      const parcela25 = map.get("parcela25");
 
 
       document.getElementById("nomDes").setAttribute("value", nomDes);
       document.getElementById("desMot").setAttribute("value", desMot);
       document.getElementById("estDes").value = estDes;
       document.getElementById("numCep").setAttribute("value", numCep);
-      document.getElementById("par").setAttribute("value", par);
 
-      /*document.getElementById("parcela1").setAttribute("value", parcela1);
+      document.getElementById("parcela1").setAttribute("value", parcela1);
       document.getElementById("parcela2").setAttribute("value", parcela2);
       document.getElementById("parcela3").setAttribute("value", parcela3);
       document.getElementById("parcela4").setAttribute("value", parcela4);
@@ -132,7 +131,7 @@ function _init(data, info) {
       document.getElementById("parcela22").setAttribute("value", parcela22);
       document.getElementById("parcela23").setAttribute("value", parcela23);
       document.getElementById("parcela24").setAttribute("value", parcela24);
-      document.getElementById("parcela25").setAttribute("value", parcela25);*/
+      document.getElementById("parcela25").setAttribute("value", parcela25);
 
     }
   });
@@ -152,32 +151,32 @@ function _saveData(data, info) {
   newData.estDes = selectEstado.options[selectEstado.selectedIndex].value;
   newData.numCep = document.getElementById("numCep").value;
   newData.check = document.getElementById("gridCheck").value;
-  newData.par = document.getElementById("par").value;
-  /*newData.check = document.getElementById("parcela1").value;
-  newData.check = document.getElementById("parcela2").value;
-  newData.check = document.getElementById("parcela3").value;
-  newData.check = document.getElementById("parcela4").value;
-  newData.check = document.getElementById("parcela5").value;
-  newData.check = document.getElementById("parcela6").value;
-  newData.check = document.getElementById("parcela7").value;
-  newData.check = document.getElementById("parcela8").value;
-  newData.check = document.getElementById("parcela9").value;
-  newData.check = document.getElementById("parcela10").value;
-  newData.check = document.getElementById("parcela11").value;
-  newData.check = document.getElementById("parcela12").value;
-  newData.check = document.getElementById("parcela13").value;
-  newData.check = document.getElementById("parcela14").value;
-  newData.check = document.getElementById("parcela15").value;
-  newData.check = document.getElementById("parcela16").value;
-  newData.check = document.getElementById("parcela17").value;
-  newData.check = document.getElementById("parcela18").value;
-  newData.check = document.getElementById("parcela19").value;
-  newData.check = document.getElementById("parcela20").value;
-  newData.check = document.getElementById("parcela21").value;
-  newData.check = document.getElementById("parcela22").value;
-  newData.check = document.getElementById("parcela23").value;
-  newData.check = document.getElementById("parcel124").value;
-  newData.check = document.getElementById("parcela25").value;*/
+
+  newData.parcela1 = document.getElementById("parcela1").value;
+  newData.parcela2 = document.getElementById("parcela2").value;
+  newData.parcela3 = document.getElementById("parcela3").value;
+  newData.parcela4 = document.getElementById("parcela4").value;
+  newData.parcela5 = document.getElementById("parcela5").value;
+  newData.parcela6 = document.getElementById("parcela6").value;
+  newData.parcela7 = document.getElementById("parcela7").value;
+  newData.parcela8 = document.getElementById("parcela8").value;
+  newData.parcela9 = document.getElementById("parcela9").value;
+  newData.parcela10 = document.getElementById("parcela10").value;
+  newData.parcela11 = document.getElementById("parcela11").value;
+  newData.parcela12 = document.getElementById("parcela12").value;
+  newData.parcela13  = document.getElementById("parcela13").value;
+  newData.parcela14 = document.getElementById("parcela14").value;
+  newData.parcela15 = document.getElementById("parcela15").value;
+  newData.parcela16 = document.getElementById("parcela16").value;
+  newData.parcela17 = document.getElementById("parcela17").value;
+  newData.parcela18 = document.getElementById("parcela18").value;
+  newData.parcela19 = document.getElementById("parcela19").value;
+  newData.parcela20 = document.getElementById("parcela20").value;
+  newData.parcela21 = document.getElementById("parcela21").value;
+  newData.parcela22 = document.getElementById("parcela22").value;
+  newData.parcela23 = document.getElementById("parcela23").value;
+  newData.parcela24 = document.getElementById("parcel124").value;
+  newData.parcela25 = document.getElementById("parcela25").value;
   console.log(newData);
   return {
     formData: newData,
