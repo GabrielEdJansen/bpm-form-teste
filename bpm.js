@@ -151,6 +151,31 @@ function _saveData(data, info) {
   newData.estDes = selectEstado.options[selectEstado.selectedIndex].value;
   newData.numCep = document.getElementById("numCep").value;
   newData.check = document.getElementById("gridCheck").value;
+  newData.check = document.getElementById("parcela1").value;
+  newData.check = document.getElementById("parcela2").value;
+  newData.check = document.getElementById("parcela3").value;
+  newData.check = document.getElementById("parcela4").value;
+  newData.check = document.getElementById("parcela5").value;
+  newData.check = document.getElementById("parcela6").value;
+  newData.check = document.getElementById("parcela7").value;
+  newData.check = document.getElementById("parcela8").value;
+  newData.check = document.getElementById("parcela9").value;
+  newData.check = document.getElementById("parcela10").value;
+  newData.check = document.getElementById("parcela11").value;
+  newData.check = document.getElementById("parcela12").value;
+  newData.check = document.getElementById("parcela13").value;
+  newData.check = document.getElementById("parcela14").value;
+  newData.check = document.getElementById("parcela15").value;
+  newData.check = document.getElementById("parcela16").value;
+  newData.check = document.getElementById("parcela17").value;
+  newData.check = document.getElementById("parcela18").value;
+  newData.check = document.getElementById("parcela19").value;
+  newData.check = document.getElementById("parcela20").value;
+  newData.check = document.getElementById("parcela21").value;
+  newData.check = document.getElementById("parcela22").value;
+  newData.check = document.getElementById("parcela23").value;
+  newData.check = document.getElementById("parcel124").value;
+  newData.check = document.getElementById("parcela25").value;
   console.log(newData);
   return {
     formData: newData,
