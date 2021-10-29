@@ -76,8 +76,8 @@ function _init(data, info) {
       const numCep = map.get("numCep");
    
       const parcela1 = map.get("parcela1");
-      /*const parcela2 = map.get("parcela2");
-      const parcela3 = map.get("parcela3");
+      const parcela2 = map.get("parcela2");
+     /* const parcela3 = map.get("parcela3");
       const parcela4 = map.get("parcela4");
       const parcela5 = map.get("parcela5");
       const parcela6 = map.get("parcela6");
@@ -108,8 +108,8 @@ function _init(data, info) {
       document.getElementById("numCep").setAttribute("value", numCep);
 
       document.getElementById("parcela1").setAttribute("value", parcela1);
-      /*document.getElementById("parcela2").setAttribute("value", parcela2);
-      document.getElementById("parcela3").setAttribute("value", parcela3);
+      document.getElementById("parcela2").setAttribute("value", parcela2);
+      /*document.getElementById("parcela3").setAttribute("value", parcela3);
       document.getElementById("parcela4").setAttribute("value", parcela4);
       document.getElementById("parcela5").setAttribute("value", parcela5);
       document.getElementById("parcela6").setAttribute("value", parcela6);
@@ -153,8 +153,8 @@ function _saveData(data, info) {
   newData.check = document.getElementById("gridCheck").value;
 
   newData.parcela1 = document.getElementById("parcela1").value;
-  /*newData.parcela2 = document.getElementById("parcela2").value;
-  newData.parcela3 = document.getElementById("parcela3").value;
+  newData.parcela2 = document.getElementById("parcela2").value;
+  /*newData.parcela3 = document.getElementById("parcela3").value;
   newData.parcela4 = document.getElementById("parcela4").value;
   newData.parcela5 = document.getElementById("parcela5").value;
   newData.parcela6 = document.getElementById("parcela6").value;
