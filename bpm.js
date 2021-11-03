@@ -28,7 +28,7 @@ function inserirLinhaTabela() {
      // alert(input.value);
     //}
     
-    alert('teste2');
+    alert('teste3');
 
   } if (nNumLinha > 25) {
     alert("O Número máximo de parcelas é 25")
@@ -64,8 +64,84 @@ function _init(data, info) {
         console.log(platformData);
       });
     });
-}
 
+  // Retorna os dados que já foram previamente preenchidos no formulário
+  info.getInfoFromProcessVariables().then(function (data) {
+    // Somente recupera os dados caso não seja a criação de uma tarefa (somente se estiver tratando a tarefa)
+    if (!info.isRequestNew() && Array.isArray(data)) {
+      var map = new Map();
+      var i;
+      for (i = 0; i < data.length; i++) {
+        map.set(data[i].key, data[i].value);
+      }
+
+      console.log("Carregando Dados", map);
+      const nomDes = map.get("nomDes");
+      const desMot = map.get("desMot");
+      const estDes = map.get("estDes");
+      const numCep = map.get("numCep");
+   
+      const parcela1 = map.get("parcela1");
+      const parcela2 = map.get("parcela2");
+     /* const parcela3 = map.get("parcela3");
+      const parcela4 = map.get("parcela4");
+      const parcela5 = map.get("parcela5");
+      const parcela6 = map.get("parcela6");
+      const parcela7 = map.get("parcela7");
+      const parcela8 = map.get("parcela8");
+      const parcela9 = map.get("parcela9");
+      const parcela10 = map.get("parcela10");
+      const parcela11 = map.get("parcela11");
+      const parcela12 = map.get("parcela12");
+      const parcela13 = map.get("parcela13");
+      const parcela14 = map.get("parcela14");
+      const parcela15 = map.get("parcela15");
+      const parcela16 = map.get("parcela16");
+      const parcela17 = map.get("parcela17");
+      const parcela18 = map.get("parcela18");
+      const parcela19 = map.get("parcela19");
+      const parcela20 = map.get("parcela20");
+      const parcela21 = map.get("parcela21");
+      const parcela22 = map.get("parcela22");
+      const parcela23 = map.get("parcela23");
+      const parcela24 = map.get("parcela24");
+      const parcela25 = map.get("parcela25");*/
+
+
+      document.getElementById("nomDes").setAttribute("value", nomDes);
+      document.getElementById("desMot").setAttribute("value", desMot);
+      document.getElementById("estDes").value = estDes;
+      document.getElementById("numCep").setAttribute("value", numCep);
+
+      document.getElementById("parcela1").setAttribute("value", parcela1);
+      document.getElementById("parcela2").setAttribute("value", parcela2);
+      /*document.getElementById("parcela3").setAttribute("value", parcela3);
+      document.getElementById("parcela4").setAttribute("value", parcela4);
+      document.getElementById("parcela5").setAttribute("value", parcela5);
+      document.getElementById("parcela6").setAttribute("value", parcela6);
+      document.getElementById("parcela7").setAttribute("value", parcela7);
+      document.getElementById("parcela8").setAttribute("value", parcela8);
+      document.getElementById("parcela9").setAttribute("value", parcela9);
+      document.getElementById("parcela10").setAttribute("value", parcela10);
+      document.getElementById("parcela11").setAttribute("value", parcela11);
+      document.getElementById("parcela12").setAttribute("value", parcela12);
+      document.getElementById("parcela13").setAttribute("value", parcela13);
+      document.getElementById("parcela14").setAttribute("value", parcela14);
+      document.getElementById("parcela15").setAttribute("value", parcela15);
+      document.getElementById("parcela16").setAttribute("value", parcela16);
+      document.getElementById("parcela17").setAttribute("value", parcela17);
+      document.getElementById("parcela18").setAttribute("value", parcela18);
+      document.getElementById("parcela19").setAttribute("value", parcela19);
+      document.getElementById("parcela20").setAttribute("value", parcela20);
+      document.getElementById("parcela21").setAttribute("value", parcela21);
+      document.getElementById("parcela22").setAttribute("value", parcela22);
+      document.getElementById("parcela23").setAttribute("value", parcela23);
+      document.getElementById("parcela24").setAttribute("value", parcela24);
+      document.getElementById("parcela25").setAttribute("value", parcela25);*/
+
+    }
+  });
+}
 // Essa função é chamada quando o usuário clicar no botão 'Enviar'
 function _saveData(data, info) {
   var input2 = document.querySelector("#parcela2");
