@@ -22,11 +22,14 @@ function inserirLinhaTabela() {
     }
 
     newCell.innerHTML = "<label  for= '" + "parcela" + nNumLinha +"' class='form-label'>Digite o valor da parcela " + nNumLinha + " </label> " + "<input id='" + "parcela" + nNumLinha + "' type='text' class='form-control'>";
+    
+    //var input = document.querySelector("#parcela1");
+    //alert(input.value);
+    
 
   } if (nNumLinha > 25) {
     alert("O Número máximo de parcelas é 25")
   }
-
 }
 
 
@@ -75,10 +78,13 @@ function _init(data, info) {
       const estDes = map.get("estDes");
       const numCep = map.get("numCep");
    
-      if(map.get("parcela1") != 0){
+
+      var input1 = document.querySelector("#parcela1");
+      var input2 = document.querySelector("#parcela2");
+      if(input.input1 != 0){
         const parcela1 = map.get("parcela1");
       }
-      if(map.get("parcela2") != 0){
+      if(input.input2 != 0){
         const parcela2 = map.get("parcela2");
       }
       
@@ -113,11 +119,11 @@ function _init(data, info) {
       document.getElementById("numCep").setAttribute("value", numCep);
 
 
-      if(map.get("parcela1") != 0){
+      if(input.input1 != 0){
         document.getElementById("parcela1").setAttribute("value", parcela1);
       }
       
-      if(map.get("parcela2") != 0){
+      if(input.input2 != 0){
         document.getElementById("parcela2").setAttribute("value", parcela2);
       }
 
@@ -165,11 +171,13 @@ function _saveData(data, info) {
   newData.check = document.getElementById("gridCheck").value;
 
 
-  if(map.get("parcela1") != 0){
+  var input1 = document.querySelector("#parcela1");
+  var input2 = document.querySelector("#parcela2");
+  if(input.input1 != 0){
     newData.parcela1 = document.getElementById("parcela1").value;
   }
   
-  if(map.get("parcela2") != 0){
+  if(input.input2 != 0){
     newData.parcela2 = document.getElementById("parcela2").value;
   }
   /*newData.parcela3 = document.getElementById("parcela3").value;
