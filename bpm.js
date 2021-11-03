@@ -28,7 +28,7 @@ function inserirLinhaTabela() {
      // alert(input.value);
     //}
     
-    alert('teste1');
+    alert('teste2');
 
   } if (nNumLinha > 25) {
     alert("O Número máximo de parcelas é 25")
@@ -68,7 +68,7 @@ function _init(data, info) {
 
 // Essa função é chamada quando o usuário clicar no botão 'Enviar'
 function _saveData(data, info) {
-  
+  var input2 = document.querySelector("#parcela2");
   if (!isFormValid()) {
     document.getElementById("gridCheck").setAttribute("class", "form-check-input is-invalid");
     throw new Error("Os dados informados não são válidos.");
@@ -86,8 +86,9 @@ function _saveData(data, info) {
     newData.parcela1 = document.getElementById("parcela1").value;
  
   
-
+    if(input.input2 != 0){
     newData.parcela2 = document.getElementById("parcela2").value;
+    }
 
   /*newData.parcela3 = document.getElementById("parcela3").value;
   newData.parcela4 = document.getElementById("parcela4").value;
