@@ -28,7 +28,7 @@ function inserirLinhaTabela() {
      // alert(input.value);
     //}
 
-    alert('TESTE7');
+    alert('TESTE8');
 
 
 
@@ -84,7 +84,10 @@ function _init(data, info) {
       const numCep = map.get("numCep");
    
       const parcela1 = map.get("parcela1");
+
+      if(document.getElementById("parcela2").value > 0){
       const parcela2 = map.get("parcela2");
+      }
      /* const parcela3 = map.get("parcela3");
       const parcela4 = map.get("parcela4");
       const parcela5 = map.get("parcela5");
@@ -116,7 +119,10 @@ function _init(data, info) {
       document.getElementById("numCep").setAttribute("value", numCep);
 
       document.getElementById("parcela1").setAttribute("value", parcela1);
+
+      if(document.getElementById("parcela2").value > 0){
       document.getElementById("parcela2").setAttribute("value", parcela2);
+      }
       /*document.getElementById("parcela3").setAttribute("value", parcela3);
       document.getElementById("parcela4").setAttribute("value", parcela4);
       document.getElementById("parcela5").setAttribute("value", parcela5);
