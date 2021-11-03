@@ -28,7 +28,7 @@ function inserirLinhaTabela() {
      // alert(input.value);
     //}
 
-    alert('TESTE9');
+    alert('TESTE10');
 
 
 
@@ -152,7 +152,6 @@ function _init(data, info) {
 }
 // Essa função é chamada quando o usuário clicar no botão 'Enviar'
 function _saveData(data, info) {
-  var input2 = document.querySelector("#parcela2");
   if (!isFormValid()) {
     document.getElementById("gridCheck").setAttribute("class", "form-check-input is-invalid");
     throw new Error("Os dados informados não são válidos.");
