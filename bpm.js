@@ -28,7 +28,7 @@ function inserirLinhaTabela() {
      // alert(input.value);
     //}
     
-    
+    alert('teste1');
 
   } if (nNumLinha > 25) {
     alert("O Número máximo de parcelas é 25")
@@ -69,8 +69,6 @@ function _init(data, info) {
 // Essa função é chamada quando o usuário clicar no botão 'Enviar'
 function _saveData(data, info) {
   
-  var input1 = document.querySelector("#parcela1");
-  var input2 = document.querySelector("#parcela2");
   if (!isFormValid()) {
     document.getElementById("gridCheck").setAttribute("class", "form-check-input is-invalid");
     throw new Error("Os dados informados não são válidos.");
