@@ -84,13 +84,13 @@ function _saveData(data, info) {
   newData.numCep = document.getElementById("numCep").value;
   newData.check = document.getElementById("gridCheck").value;
 
-  if(input.input1 != 0){
+
     newData.parcela1 = document.getElementById("parcela1").value;
-  }
+ 
   
-  if(input.input2 != 0){
+
     newData.parcela2 = document.getElementById("parcela2").value;
-  }
+
   /*newData.parcela3 = document.getElementById("parcela3").value;
   newData.parcela4 = document.getElementById("parcela4").value;
   newData.parcela5 = document.getElementById("parcela5").value;
