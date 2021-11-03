@@ -28,7 +28,7 @@ function inserirLinhaTabela() {
      // alert(input.value);
     //}
 
-    alert('TESTE5');
+    alert('TESTE6');
 
   } if (nNumLinha > 25) {
     alert("O Número máximo de parcelas é 25")
@@ -162,7 +162,7 @@ function _saveData(data, info) {
     newData.parcela1 = document.getElementById("parcela1").value;
  
   
-    if(document.getElementById("parcela2").value != 0){
+    if(document.getElementById("parcela2").value != null){
     newData.parcela2 = document.getElementById("parcela2").value;
     }
 
